@@ -1,10 +1,10 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
-import { motion } from 'framer-motion';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import { motion } from "framer-motion";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 // Reusable Stat Item Component
 const StatItem = ({ number, label }: { number: string; label: string }) => (
@@ -21,16 +21,16 @@ const StatItem = ({ number, label }: { number: string; label: string }) => (
 
 const Hero = () => {
   const images = [
-    'Images/slider-image.jpg',
-    'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+    "Images/slider-image.jpg",
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
   ];
 
   const stats = [
-    { number: '25+', label: 'Years of Excellence' },
-    { number: '15,000+', label: 'Alumni Worldwide' },
-    { number: '96%', label: 'Placement Rate' },
-    { number: '50+', label: 'Industry Partners' },
+    { number: "25+", label: "Years of Excellence" },
+    { number: "15,000+", label: "Alumni Worldwide" },
+    { number: "96%", label: "Placement Rate" },
+    { number: "50+", label: "Industry Partners" },
   ];
 
   return (
@@ -52,10 +52,10 @@ const Hero = () => {
               className="absolute inset-0 transition-opacity duration-1000"
               style={{
                 backgroundImage: `url(${image})`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                height: '100%',
-                width: '100%',
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                height: "100%",
+                width: "100%",
               }}
             />
           </SwiperSlide>
@@ -84,8 +84,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl mb-8 text-blue-100"
           >
-            Join Oxford College of Engineering and Management for world-class education and unlock your potential
-            with our innovative programs and exceptional faculty.
+            Join Oxford College of Engineering and Management for world-class
+            education and unlock your potential with our innovative programs and
+            exceptional faculty.
           </motion.p>
 
           <motion.div

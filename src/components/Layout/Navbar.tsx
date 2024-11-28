@@ -1,24 +1,29 @@
-import React, { useState } from 'react';
-import { Menu, X, ChevronDown, Search, Phone, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X, ChevronDown, Search, Phone, Mail } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { title: 'Home', href: '/' },
+    { title: "Home", href: "/" },
     {
-      title: 'Academics',
-      href: '#',
-      submenu: ['Programs', 'Faculty', 'Research', 'Library']
+      title: "Academics",
+      href: "#",
+      submenu: ["Programs", "Faculty", "Research", "Library"],
     },
     {
-      title: 'Admissions',
-      href: '#',
-      submenu: ['Apply Now', 'Requirements', 'Scholarships', 'International Students']
+      title: "Admissions",
+      href: "#",
+      submenu: [
+        "Apply Now",
+        "Requirements",
+        "Scholarships",
+        "International Students",
+      ],
     },
-    { title: 'Student Life', href: '#' },
-    { title: 'About', href: '#' },
-    { title: 'Contact', href: '#' }
+    { title: "Student Life", href: "#" },
+    { title: "About", href: "#" },
+    { title: "Contact", href: "#" },
   ];
 
   return (
@@ -26,18 +31,28 @@ const Navbar = () => {
       <div className="bg-blue-900 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
-            <a href="tel:+977-1-4784834" className="flex items-center hover:text-blue-200">
+            <a
+              href="tel:+977-1-4784834"
+              className="flex items-center hover:text-blue-200"
+            >
               <Phone size={14} className="mr-1" />
               +977-1-4784834
             </a>
-            <a href="mailto:info@oxfordcollege.edu.np" className="flex items-center hover:text-blue-200">
+            <a
+              href="mailto:info@oxfordcollege.edu.np"
+              className="flex items-center hover:text-blue-200"
+            >
               <Mail size={14} className="mr-1" />
               info@oxfordcollege.edu.np
             </a>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="hover:text-blue-200">Alumni</a>
-            <a href="#" className="hover:text-blue-200">Portal Login</a>
+            <a href="#" className="hover:text-blue-200">
+              Alumni
+            </a>
+            <a href="#" className="hover:text-blue-200">
+              Portal Login
+            </a>
           </div>
         </div>
       </div>
@@ -47,7 +62,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-4">
               {/* Logo beside the "OXFORD COLLEGE" text */}
-              <img 
+              <img
                 src="Images/oxford_logo.png" // Replace this with your actual logo URL
                 alt="Oxford College Logo"
                 className="h-12 w-auto" // Adjust size of the logo as needed

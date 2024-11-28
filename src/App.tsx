@@ -1,32 +1,15 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Programs from './components/Programs';
-import Faculty from './components/Faculty';
-import Admissions from './components/Admissions';
-import Research from './components/Research';
-import NewsEvents from './components/NewsEvents';
-import CampusLife from './components/CampusLife';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Programs />
-      <Faculty />
-      <Admissions />
-      <Research />
-      <NewsEvents />
-      <CampusLife />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
