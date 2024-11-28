@@ -56,14 +56,19 @@
     <li>Install dependencies:
         <pre><code>npm install</code></pre>
     </li>
-    ```
-    for backend -> run app.py 
-    for frontend -> npm run dev
-    ```
-    <li>parallel updating:
-        <pre><code>npm run mix</code></pre>
+    <li>run project:
+        <pre><code>npm run dev</code></pre>
     </li>
 </ol>
+
+# also
+```
+    for backend -> run app.py at backend
+    for frontend -> npm run dev ta current dir
+    parallel -> npm run mix
+```
+
+
 
 <hr>
 
