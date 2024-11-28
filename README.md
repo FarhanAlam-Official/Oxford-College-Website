@@ -56,8 +56,12 @@
     <li>Install dependencies:
         <pre><code>npm install</code></pre>
     </li>
-    <li>Start the development server:
-        <pre><code>npm run dev</code></pre>
+    ```
+    for backend -> run app.py 
+    for frontend -> npm run dev
+    ```
+    <li>parallel updating:
+        <pre><code>npm run mix</code></pre>
     </li>
 </ol>
 
